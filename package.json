@@ -1,0 +1,20 @@
+{
+  "name": "http://Roxy44.github.io/VendingMachineServer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",  
+    "start": "json-server -p 5000 --watch server.json"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "json-server": "^0.17.4"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.1.0"
+  }
+}
