@@ -90,10 +90,10 @@ const startServer = () => {
         app.post('/machine', (req, res) => {
             try {
                 const { products, withdraw, balance } = req.body
-                machine.balance = products;
+                machine.products = products;
                 machine.withdraw = withdraw;
                 machine.balance = balance;
-                res.send(200)
+                res.sendStatus(200)
             } catch (e) {
                 console.log(e)
             }
